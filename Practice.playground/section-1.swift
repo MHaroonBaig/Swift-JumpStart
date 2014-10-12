@@ -324,19 +324,22 @@ default:
 class Hello {
     
     var anE:Int
+    var var2:String
     
     init(){
         anE = 0
+        var2 = "Empty"
         
         
     }
-    init (a:Int){
+    init (a:Int = 20, var2:String = "Default"){
         self.anE = a
+        self.var2 = var2
         
     }
     
     func display (){
-    println(a)
+    println("\(a)")
     
     }
 
