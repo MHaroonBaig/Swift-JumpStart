@@ -338,15 +338,20 @@ class Hello {
         
     }
     
-    func display (){
+    func display (closure:()->()){
     println("\(a) and \(var2)")
+    closure()
     
     }
 
 }
 
 var obj = Hello(a:10, var2:"Hi There !")
-obj.display()
+obj.display({
+() -> () in
+    println("This was from closure")
+
+})
 
 
 
