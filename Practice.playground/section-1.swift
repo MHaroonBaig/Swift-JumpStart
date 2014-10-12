@@ -343,15 +343,27 @@ class Hello {
     closure()
     
     }
+    func display2 (closure:(a:Int, b:Int)->Int){
+        var tt = closure(a:self.anE, b:self.anE)
+        println(tt)
+    
+    }
 
 }
 
-var obj = Hello(a:10, var2:"Hi There !")
+var obj = Hello(a:20, var2:"Hi There !")
 obj.display({
 () -> () in
     println("This was from closure")
 
 })
+
+obj.display2({
+    (o:Int, i:Int) -> Int in
+    return o*i
+    
+})
+
 
 
 
