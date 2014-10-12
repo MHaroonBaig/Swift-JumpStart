@@ -247,6 +247,26 @@ func ccc ( closure:()->() ){
 
 }
 
+var bbb = [Int]()
+bbb = [1,2,3,4,5,6]
+bbb.append(7)
+for i in bbb{
+println(i)
+
+}
+
+var yy = [Int:String]()
+yy.updateValue("Haroon", forKey: 1)
+//yy[1]=nil
+for (key, value) in yy{
+println("\(key) and \(value)")
+}
+var tuple = (1,2,3,4)
+var (n1,m1,o1,p1) = tuple
+println("\(n1+m1+o1+p1)") //decomposing a tuple
+
+
+
 
 
 
