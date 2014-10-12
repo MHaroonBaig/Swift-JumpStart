@@ -339,14 +339,15 @@ class Hello {
     }
     
     func display (){
-    println("\(a)")
+    println("\(a) and \(var2)")
     
     }
 
 }
 
-var obj = Hello(a:10)
+var obj = Hello(a:10, var2:"Hi There !")
 obj.display()
+
 
 
 
