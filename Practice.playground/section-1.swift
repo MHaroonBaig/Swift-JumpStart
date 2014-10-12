@@ -321,8 +321,29 @@ default:
     
 }
 
+class Hello {
+    
+    var anE:Int
+    
+    init(){
+        anE = 0
+        
+        
+    }
+    init (a:Int){
+        self.anE = a
+        
+    }
+    
+    func display (){
+    println(a)
+    
+    }
 
+}
 
+var obj = Hello(a:10)
+obj.display()
 
 
 
