@@ -205,6 +205,53 @@ var mySecondObject = SecondClass(a:10, b:10)
 println(mySecondObject.addMe())
 
 
+var a3:Int
+a3 = 10
+println(a3)
+let o = 2
+println(o)
+
+switch o{
+case 1...10:
+    println("hello there")
+default:
+    break
+
+
+}
+
+for i in 0...2{
+println("Yaar !")
+}
+
+let cc = {
+    () -> () in
+    println("This is a closure")
+
+
+}
+
+ccc(cc)
+ccc({
+() -> () in
+    println("This is explicit thing !")
+
+
+})
+
+func ccc ( closure:()->() ){
+
+    for i in 0...2{
+    closure()
+    }
+
+}
+
+
+
+
+
+
 
 
 
