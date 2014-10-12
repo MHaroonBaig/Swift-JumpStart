@@ -265,10 +265,61 @@ var tuple = (1,2,3,4)
 var (n1,m1,o1,p1) = tuple
 println("\(n1+m1+o1+p1)") //decomposing a tuple
 
+var optional: Int?
+//optional = 10
 
+if let somevalue = optional {
+    println("This is the value \(somevalue)")
+}
+else {
+    println("The thing was null. Hell yeah !")
+}
 
+let rr = {
+    () -> () in
+    println("This is for the sake of practice")
+    
+}
 
+closurere ({
+    () -> () in
+    println("This Thing ! Yeah")
+    
+})
 
+func closurere (closure:()->()){
+    for i in 0...1{
+        closure()
+    }
+    
+    
+}
+
+enum pra {
+    case one
+    case two
+    case three
+    
+    
+}
+
+var ttt:pra
+ttt = .one
+var ttt2 = pra.two
+
+if ttt == .one{
+    
+    println("Hell Yeah!")
+}
+
+switch ttt2 {
+    
+case .two:
+    println("Ths thins works")
+default:
+    break
+    
+}
 
 
 
