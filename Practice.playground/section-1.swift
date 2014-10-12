@@ -216,54 +216,56 @@ case 1...10:
     println("hello there")
 default:
     break
-
-
+    
+    
 }
 
 for i in 0...2{
-println("Yaar !")
+    println("Yaar !")
 }
 
 let cc = {
     () -> () in
     println("This is a closure")
-
-
+    
+    
 }
 
 ccc(cc)
 ccc({
-() -> () in
+    () -> () in
     println("This is explicit thing !")
-
-
+    
+    
 })
 
 func ccc ( closure:()->() ){
-
+    
     for i in 0...2{
-    closure()
+        closure()
     }
-
+    
 }
 
 var bbb = [Int]()
 bbb = [1,2,3,4,5,6]
 bbb.append(7)
 for i in bbb{
-println(i)
-
+    println(i)
+    
 }
 
 var yy = [Int:String]()
 yy.updateValue("Haroon", forKey: 1)
 //yy[1]=nil
 for (key, value) in yy{
-println("\(key) and \(value)")
+    println("\(key) and \(value)")
 }
 var tuple = (1,2,3,4)
 var (n1,m1,o1,p1) = tuple
 println("\(n1+m1+o1+p1)") //decomposing a tuple
+
+
 
 
 
