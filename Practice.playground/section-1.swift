@@ -370,37 +370,12 @@ obj.display2({
     p = o * i
     return p
     }, p:10, l:10)
+
+obj.display2({
+    (q:Int, u:Int) -> Int in
+    return q-u
+
+    
+
+}, p: 10, l: 10)
 println("Hello")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
