@@ -370,6 +370,7 @@ obj.display2({
     p = o * i
     return p
     }, p:10, l:10)
+println("Hello")
 
 
 
