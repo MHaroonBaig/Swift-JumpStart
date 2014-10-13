@@ -376,15 +376,18 @@ obj.display2({
     return q-u
 
     
-
-}, p: 10, l: 10)
+    
+    }, p: 10, l: 10)
 
 var dr = [1:"abc", 2:"def"]
 
 for (key, value) in dr {
-
-println("\(key) and \(value)")
-
+    
+    println("\(key) and \(value)")
+    
 }
 
+var ee: Int?
+ee = 10
+println(ee!)
 
