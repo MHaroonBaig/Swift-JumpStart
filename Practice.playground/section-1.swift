@@ -378,4 +378,13 @@ obj.display2({
     
 
 }, p: 10, l: 10)
-println("Hello")
+
+var dr = [1:"abc", 2:"def"]
+
+for (key, value) in dr {
+
+println("\(key) and \(value)")
+
+}
+
+
