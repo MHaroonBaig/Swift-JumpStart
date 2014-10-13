@@ -389,5 +389,8 @@ for (key, value) in dr {
 
 var ee: Int?
 ee = 10
-println(ee!)
+if let ff = ee {
+println(ff)
+}
+
 
