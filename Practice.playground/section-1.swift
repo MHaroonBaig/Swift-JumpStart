@@ -434,6 +434,12 @@ class HiThere {
     
     }
     
+    private func Arrr() -> [Int]{
+    
+    return self.arr
+    
+    }
+    
    
     
     
@@ -442,6 +448,12 @@ class HiThere {
 
 var myO = HiThere(a:10, b:[1,2,3])
 myO.display()
+var arrt:[Int]
+arrt = myO.Arrr()
+for i in arrt{
+println(i)
+
+}
 
 
 
