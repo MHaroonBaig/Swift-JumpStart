@@ -417,7 +417,12 @@ class HiThere {
     }
     
     private func display(){
-    println(tri!)
+        if let some = tri {
+        println(some)
+        }
+        else {
+        println("The value was nil")
+        }
     
     }
     
