@@ -374,7 +374,7 @@ obj.display2({
 obj.display2({
     (q:Int, u:Int) -> Int in
     return q-u
-
+    
     
     
     }, p: 10, l: 10)
@@ -390,7 +390,7 @@ for (key, value) in dr {
 var ee: Int?
 ee = 10
 if let ff = ee {
-println(ff)
+    println(ff)
 }
 
 var oo:Int
@@ -400,10 +400,10 @@ println(oo)
 var rew:Int?
 rew = 10
 if let pop = rew{
-println("This wasn't nil")
+    println("This wasn't nil")
 }
 else{
-println("This was actually nil")
+    println("This was actually nil")
 }
 
 
@@ -414,36 +414,36 @@ class HiThere {
     
     
     init(a:Int, b:[Int]){
-    self.tri = a
-    self.arr = b
+        self.tri = a
+        self.arr = b
         
     }
     
     
     private func display(){
         if let some = tri {
-        println(some)
+            println(some)
         }
         else {
-        println("The value was nil")
+            println("The value was nil")
         }
         
         for itt in self.arr{
             println(itt)
         }
-    
+        
     }
     
     private func Arrr() -> [Int]{
-    
-    return self.arr
-    
+        
+        return self.arr
+        
     }
     
-   
     
     
-
+    
+    
 }
 
 var myO = HiThere(a:10, b:[1,2,3])
@@ -451,8 +451,8 @@ myO.display()
 var arrt:[Int]
 arrt = myO.Arrr()
 for i in arrt{
-println(i)
-
+    println(i)
+    
 }
 
 
