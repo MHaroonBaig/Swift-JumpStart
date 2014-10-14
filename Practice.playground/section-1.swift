@@ -407,4 +407,25 @@ println("This was actually nil")
 }
 
 
+class HiThere {
+    private var tri:Int?
+    
+    init(){}
+    
+    init(a:Int){
+    self.tri = a
+    }
+    
+    private func display(){
+    println(tri!)
+    
+    }
+    
+    
+
+}
+
+var myO = HiThere(a:10)
+myO.display()
+
 
