@@ -409,12 +409,16 @@ println("This was actually nil")
 
 class HiThere {
     private var tri:Int?
+    private var arr:[Int]
     
-    init(){}
     
-    init(a:Int){
+    
+    init(a:Int, b:[Int]){
     self.tri = a
+    self.arr = b
+        
     }
+    
     
     private func display(){
         if let some = tri {
@@ -423,14 +427,21 @@ class HiThere {
         else {
         println("The value was nil")
         }
+        
+        for itt in self.arr{
+            println(itt)
+        }
     
     }
+    
+   
     
     
 
 }
 
-var myO = HiThere(a:10)
+var myO = HiThere(a:10, b:[1,2,3])
 myO.display()
+
 
 
