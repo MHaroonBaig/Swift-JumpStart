@@ -410,12 +410,14 @@ else{
 class HiThere {
     private var tri:Int?
     private var arr:[Int]
+    private var someval:[Int:String]
     
     
     
-    init(a:Int, b:[Int]){
+    init(a:Int, b:[Int], c:[Int:String]){
         self.tri = a
         self.arr = b
+        self.someval = c
         
     }
     
@@ -431,7 +433,10 @@ class HiThere {
         for itt in self.arr{
             println(itt)
         }
+        for (key, value) in someval{
+        println("\(key) and \(value)")
         
+        }
     }
     
     private func Arrr() -> [Int]{
@@ -446,13 +451,16 @@ class HiThere {
     
 }
 
-var myO = HiThere(a:10, b:[1,2,3])
+var myO = HiThere(a:10, b:[1,2,3], c:[1:"Hello", 2:"Hi there"])
+
 myO.display()
+
 var arrt:[Int]
+
 arrt = myO.Arrr()
+
 for i in arrt{
     println(i)
-    
 }
 
 
