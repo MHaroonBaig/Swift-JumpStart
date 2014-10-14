@@ -444,6 +444,10 @@ class HiThere {
         return self.arr
         
     }
+    private func Dicttt() -> [Int:String]{
+    
+    return self.someval
+    }
     
     
     
@@ -462,6 +466,10 @@ arrt = myO.Arrr()
 for i in arrt{
     println(i)
 }
+var hel = myO.Dicttt()
+for (i,j) in hel{
+println("\(i) and and \(j)")
 
+}
 
 
