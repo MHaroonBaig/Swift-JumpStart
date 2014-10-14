@@ -393,4 +393,8 @@ if let ff = ee {
 println(ff)
 }
 
+var oo:Int
+oo = 10
+println(oo)
+
 
