@@ -449,6 +449,17 @@ class HiThere {
     return self.someval
     }
     
+    private func hello (closure:()->[Int:String]){
+    
+        var er = closure()
+        for (i,j) in er {
+        println("\(i) and and and \(j)")
+        
+        }
+        
+    
+    }
+    
     
     
     
@@ -472,4 +483,11 @@ println("\(i) and and \(j)")
 
 }
 
+let rrr = {
+    () -> [Int:String] in
+    
+    return [1:"Hello"]
 
+}
+
+myO.hello(rrr)
