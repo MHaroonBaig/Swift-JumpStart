@@ -397,4 +397,14 @@ var oo:Int
 oo = 10
 println(oo)
 
+var rew:Int?
+rew = 10
+if let pop = rew{
+println("This wasn't nil")
+}
+else{
+println("This was actually nil")
+}
+
+
 
