@@ -505,9 +505,39 @@ case 3..<10:
     println("Hell Hell yeah!")
 default:
     break
+}
+
+enum Enum {
     
+    case a
+    case b
+    case c
+    case d
     
 }
+
+var eenum:Enum
+
+eenum = .a
+
+if eenum == .a{
+    println("This works ! Yeah ")
+}
+
+let constant : Float = 2.0
+let constant2 : Int = 2
+println(constant)
+
+var dictionary = [Int:String]()
+dictionary.updateValue("hello Hi", forKey: 1)
+for (i,j) in dictionary{
+    println("\(i) and \(j)")
+}
+
+
+
+
+
 
 
 
