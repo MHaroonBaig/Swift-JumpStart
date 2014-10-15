@@ -558,7 +558,8 @@ var testt: enumenum
 testt = .z
 
 println(testt.hashValue)
-
+testt = .v
+println(testt.hashValue)
 
 
 
