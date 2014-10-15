@@ -578,7 +578,7 @@ let clooo = {
     (a:enumenum) in
     
     println(a.hashValue)
-
+    
 }
 
 clooo(testt)
