@@ -557,6 +557,8 @@ case z,x,c,v
 var testt: enumenum
 testt = .z
 
+println(testt.hashValue)
+
 
 
 
