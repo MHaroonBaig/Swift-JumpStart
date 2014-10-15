@@ -540,6 +540,10 @@ for (i,j) in dictionary{
 
 println(dictionary.count)
 
+var something:Int?
+something = 10
+println(something!)
+
 
 
 
