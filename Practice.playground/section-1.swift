@@ -567,4 +567,11 @@ if testt == .v {
     
 }
 
+switch testt {
+case .v:
+    println("Here it worked too !")
+default:
+    break
+}
+
 
