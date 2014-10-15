@@ -491,3 +491,5 @@ let rrr = {
 }
 
 myO.hello(rrr)
+
+println(rrr())
