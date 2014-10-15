@@ -544,6 +544,11 @@ var something:Int?
 something = 10
 println(something!)
 
+if let ii = something{
+println("\(ii) is not a nil thing though !")
+
+}
+
 
 
 
