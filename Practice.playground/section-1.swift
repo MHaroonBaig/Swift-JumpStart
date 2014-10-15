@@ -545,13 +545,13 @@ something = 10
 println(something!)
 
 if let ii = something{
-println("\(ii) is not a nil thing though !")
-
+    println("\(ii) is not a nil thing though !")
+    
 }
 
 enum enumenum {
-case z,x,c,v
-
+    case z,x,c,v
+    
 }
 
 var testt: enumenum
