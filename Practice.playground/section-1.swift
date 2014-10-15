@@ -561,9 +561,10 @@ println(testt.hashValue)
 testt = .v
 println(testt.hashValue)
 
-
-
-
-
+if testt == .v {
+    println("it worked!")
+    
+    
+}
 
 
