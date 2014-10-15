@@ -434,8 +434,8 @@ class HiThere {
             println(itt)
         }
         for (key, value) in someval{
-        println("\(key) and \(value)")
-        
+            println("\(key) and \(value)")
+            
         }
     }
     
@@ -445,19 +445,19 @@ class HiThere {
         
     }
     private func Dicttt() -> [Int:String]{
-    
-    return self.someval
+        
+        return self.someval
     }
     
     private func hello (closure:()->[Int:String]){
-    
+        
         var er = closure()
         for (i,j) in er {
-        println("\(i) and and and \(j)")
-        
+            println("\(i) and and and \(j)")
+            
         }
         
-    
+        
     }
     
     
@@ -479,17 +479,37 @@ for i in arrt{
 }
 var hel = myO.Dicttt()
 for (i,j) in hel{
-println("\(i) and and \(j)")
-
+    println("\(i) and and \(j)")
+    
 }
 
 let rrr = {
     () -> [Int:String] in
     
     return [1:"Hello"]
-
+    
 }
 
 myO.hello(rrr)
 
 println(rrr())
+
+var variable:Int
+variable = 10
+
+
+switch (variable){
+case 5...10:
+    println("Hell yeah")
+case 3..<10:
+    println("Hell Hell yeah!")
+default:
+    break
+    
+    
+}
+
+
+
+
+
