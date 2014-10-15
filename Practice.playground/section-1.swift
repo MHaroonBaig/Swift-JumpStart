@@ -549,6 +549,14 @@ println("\(ii) is not a nil thing though !")
 
 }
 
+enum enumenum {
+case z,x,c,v
+
+}
+
+var testt: enumenum
+testt = .z
+
 
 
 
