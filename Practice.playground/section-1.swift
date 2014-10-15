@@ -530,10 +530,12 @@ println(constant)
 
 var dictionary = [Int:String]()
 dictionary.updateValue("hello Hi", forKey: 1)
+dictionary.updateValue("Salam", forKey: 2)
 for (i,j) in dictionary{
     println("\(i) and \(j)")
 }
 
+println(dictionary.count)
 
 
 
