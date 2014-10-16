@@ -674,6 +674,17 @@ default:
     break
 }
 
+let arrayclosure = {
+    (var a:Int, b:Int) -> Bool in
+    return a>b
+}
+
+var try = [4,6,8,5,3,5,7,8,53,7,8]
+var jkl = sorted(try, arrayclosure)
+for i in jkl {
+    print(i)
+    
+}
 
 
 
