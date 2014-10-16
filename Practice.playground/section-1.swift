@@ -619,6 +619,22 @@ func closureclosure (closure:() -> ()){
 
 closureclosure(qwer)
 
+var tre:String
+tre = "Hello"
+tre += " World!"
+println(tre)
+
+var char:Character
+char = "c"
+println(char)
+
+var dsa :String
+dsa = "Helo I am haroon"
+
+for i in dsa {
+    println(i)
+}
+
 
 
 
