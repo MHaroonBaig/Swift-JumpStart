@@ -639,5 +639,44 @@ for i in dsa {
 dsa += String(char)
 println(dsa)
 
+int = 34
+
+switch int {
+    
+case 2...10:
+    println("Doesnt work")
+case 10...40:
+    println("This should match")
+default:
+    break
+    
+    
+}
+
+
+enum iop {
+    
+    case v
+    case b
+    case n
+}
+
+
+var cvb:iop
+cvb = .n
+
+switch cvb.hashValue {
+case 1:
+    println("This doesnt work")
+case 2:
+    println("This works")
+default:
+    break
+}
+
+
+
+
+
 
 
