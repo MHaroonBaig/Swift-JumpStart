@@ -597,23 +597,23 @@ println(string)
 
 
 func function () -> Int {
-
+    
     return 10;
-
+    
 }
 
 var rret = function()
 println(rret)
 
 let qwer = {
-
-() -> () in
+    
+    () -> () in
     println("Hello world !")
 }
 
 qwer()
 
-func closureclosure (closure:() -> ()) {
+func closureclosure (closure:() -> ()){
     closure()
 }
 
