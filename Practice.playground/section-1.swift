@@ -584,4 +584,27 @@ let clooo = {
 clooo(testt)
 
 
+var int:Int
+int = 10
+println(int)
+
+var float:Float = 10.0
+println(float)
+
+
+var string:String = "Helo this is Haroon"
+println(string)
+
+
+func function () -> Int {
+
+    return 10;
+
+}
+
+var rret = function()
+println(rret)
+
+
+
 
