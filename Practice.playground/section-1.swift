@@ -609,10 +609,18 @@ let qwer = {
 
 () -> () in
     println("Hello world !")
-
 }
 
 qwer()
+
+func closureclosure (closure:() -> ()) {
+    closure()
+}
+
+closureclosure(qwer)
+
+
+
 
 
 
