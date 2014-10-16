@@ -636,8 +636,8 @@ for i in dsa {
 }
 
 
-
-
+dsa += String(char)
+println(dsa)
 
 
 
