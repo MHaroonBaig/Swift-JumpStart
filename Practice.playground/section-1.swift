@@ -674,14 +674,28 @@ default:
     break
 }
 
-let arrayclosure = {
+let descending = {
     (var a:Int, b:Int) -> Bool in
     return a>b
 }
 
+
+let ascending = {
+    (var a:Int, b:Int) -> Bool in
+    return a<b
+}
+
+
 var try = [4,6,8,5,3,5,7,8,53,7,8]
-var jkl = sorted(try, arrayclosure)
+var jkl = sorted(try, ascending)
 for i in jkl {
+    print(i)
+    
+}
+println("\ndifference")
+
+var jkl2 = sorted(try, descending)
+for i in jkl2 {
     print(i)
     
 }
