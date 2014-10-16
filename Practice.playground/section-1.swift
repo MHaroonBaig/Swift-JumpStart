@@ -605,6 +605,15 @@ func function () -> Int {
 var rret = function()
 println(rret)
 
+let qwer = {
+
+() -> () in
+    println("Hello world !")
+
+}
+
+qwer()
+
 
 
 
