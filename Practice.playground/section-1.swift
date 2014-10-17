@@ -712,6 +712,32 @@ println(ghj)
 }
 
 
+class KLM {
+
+    private var tyu: Int?
+    
+    init (var a:Int)
+    {
+    self.tyu = a
+    
+    }
+    
+    internal func Display (){
+        if let u = self.tyu{
+        println(u)
+        }
+        else {
+        println("The thing was nil")
+        }
+    }
+
+
+
+}
+
+var myClass = KLM(a:78)
+myClass.Display()
+
 
 
 
