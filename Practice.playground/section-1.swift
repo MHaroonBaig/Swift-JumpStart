@@ -701,7 +701,17 @@ for i in jkl2 {
 }
 
 
-println("Hello Yosemeti !")
+println("Hello Yosemite !")
+
+var cvbb: Int?
+cvbb = 90
+println(cvbb)
+
+if let ghj = cvbb{
+println(ghj)
+}
+
+
 
 
 
