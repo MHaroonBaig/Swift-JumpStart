@@ -739,6 +739,19 @@ var myClass = KLM(a:78)
 myClass.Display()
 
 
+var ui:Int?
+//println(ui!)
+
+if let o = ui {
+println(o)
+
+}
+else {
+println("The value is nil")
+}
+
+
+
 
 
 
