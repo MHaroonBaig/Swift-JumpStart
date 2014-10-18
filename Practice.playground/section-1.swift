@@ -708,31 +708,31 @@ cvbb = 90
 println(cvbb)
 
 if let ghj = cvbb{
-println(ghj)
+    println(ghj)
 }
 
 
 class KLM {
-
+    
     private var tyu: Int?
     
     init (var a:Int)
     {
-    self.tyu = a
-    
+        self.tyu = a
+        
     }
     
     internal func Display (){
         if let u = self.tyu{
-        println(u)
+            println(u)
         }
         else {
-        println("The thing was nil")
+            println("The thing was nil")
         }
     }
-
-
-
+    
+    
+    
 }
 
 var myClass = KLM(a:78)
@@ -743,11 +743,11 @@ var ui:Int?
 //println(ui!)
 
 if let o = ui {
-println(o)
-
+    println(o)
+    
 }
 else {
-println("The value is nil")
+    println("The value is nil")
 }
 
 
