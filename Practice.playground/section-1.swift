@@ -751,6 +751,14 @@ println("The value is nil")
 }
 
 
+var varvar: Int
+varvar = 10
+var tgb:Float
+tgb = Float(varvar)
+
+
+println(tgb)
+
 
 
 
