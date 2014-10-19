@@ -12,8 +12,8 @@ func LazyType() -> String {
 class SuperClass {
     
     // Stored properties
-    var fName:String
-    var lName:String
+    private var fName:String
+    private var lName:String
     
     // This is an observer. Whenever the value is changed, we could see it. No matter if there are 1000 instances of this class
     var anObserver:String = "This is an observer" {
@@ -75,6 +75,12 @@ class SuperClass {
     }
     
     
+    final func SomeFunction() {
+        
+        println("This function is declared as final and cannot be inherited in the sub-class")
+    }
+    
+    
 }
 
 
@@ -83,7 +89,7 @@ class SubClass :SuperClass{
     var another:String
     
     override init (){
-        self.another= "This is a property of a sub-class"
+        self.another = "This is a property of a sub-class"
         super.init()
         
     }
