@@ -19,7 +19,7 @@ class SuperClass {
     }
     
     func get () -> String{
-        return (self.fName + " "+ self.lName)
+        return (self.fName + " " + self.lName)
     }
     
     func display (){
@@ -34,3 +34,9 @@ class SuperClass {
     
     
 }
+
+
+var myObject = SuperClass(fName: "Muhammad", lName:"Haroon" )
+myObject.display()
+
+
