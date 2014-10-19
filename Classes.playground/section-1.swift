@@ -8,6 +8,12 @@ class SuperClass {
     var fName:String
     var lName:String
     
+    // this can be accessed by a class level, not at object level
+    class var typeLevel :String {
+    return "This is a type level string"
+    }
+    
+    
     // read-only Computed property
     var fullName:String{
         
@@ -49,4 +55,5 @@ class SuperClass {
 var myObject = SuperClass(fName: "Muhammad", lName:"Haroon" )
 myObject.display()
 myObject.fullName // accessing read-only computed property
+SuperClass.typeLevel
 
