@@ -109,8 +109,10 @@ SuperClass.typeLevel
 SuperClass.TypeLevelFunc("Hello") // naming a class-level function will give you an error
 
 myObject.anObserver = "Hello, Hi !" // we can track the change in the console
+
 var subObject = SubClass()
-println(subObject.another)
+
+println(subObject.another) // inheritance in action
 
 
 
