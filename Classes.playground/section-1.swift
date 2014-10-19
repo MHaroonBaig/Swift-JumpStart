@@ -4,8 +4,18 @@ import UIKit
 
 class SuperClass {
     
+    // Stored properties
     var fName:String
     var lName:String
+    
+    // read-only Computed property
+    var fullName:String{
+        
+        get{
+            return (self.fName+" "+self.lName)
+        }
+        
+    }
     
     
     init (){
@@ -38,5 +48,5 @@ class SuperClass {
 
 var myObject = SuperClass(fName: "Muhammad", lName:"Haroon" )
 myObject.display()
-
+myObject.fullName // accessing read-only computed property
 
