@@ -22,7 +22,7 @@ class SuperClass {
         }
         didSet{
             println("Changed from \(oldValue)")
-        
+            
         }
         
     }
@@ -78,6 +78,18 @@ class SuperClass {
 }
 
 
+class SubClass :SuperClass{
+    
+    var another:String
+    
+    override init (){
+        self.another= "This is a property of a sub-class"
+        super.init()
+        
+    }
+}
+
+
 var myObject = SuperClass(fName: "Muhammad", lName:"Haroon" )
 
 myObject.display()
@@ -91,5 +103,9 @@ SuperClass.typeLevel
 SuperClass.TypeLevelFunc("Hello") // naming a class-level function will give you an error
 
 myObject.anObserver = "Hello, Hi !" // we can track the change in the console
+var subObject = SubClass()
+println(subObject.another)
+
+
 
 
