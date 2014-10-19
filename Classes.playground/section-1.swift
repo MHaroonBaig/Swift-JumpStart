@@ -2,6 +2,13 @@
 
 import UIKit
 
+func LazyType() -> String {
+    
+    return "This is for lazy var, haha"
+    
+}
+
+
 class SuperClass {
     
     // Stored properties
@@ -12,6 +19,8 @@ class SuperClass {
     class var typeLevel :String {
     return "This is a type level string"
     }
+    
+    lazy var lvar:String = LazyType()
     
     
     // read-only Computed property
@@ -49,8 +58,8 @@ class SuperClass {
     
     // Class-level function
     class func TypeLevelFunc (arg:String){
-    println("This is a class level functionand we passed \(arg) to it")
-    
+        println("This is a class level functionand we passed \(arg) to it")
+        
     }
     
     
@@ -58,9 +67,15 @@ class SuperClass {
 
 
 var myObject = SuperClass(fName: "Muhammad", lName:"Haroon" )
+
 myObject.display()
+
 myObject.fullName // accessing read-only computed property
+
+myObject.lvar // LazyType funtion is called only when this particular instance is called
+
 SuperClass.typeLevel
+
 SuperClass.TypeLevelFunc("Hello") // naming a class-level function will give you an error
 
 
