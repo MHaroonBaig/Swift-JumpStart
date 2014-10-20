@@ -115,7 +115,8 @@ var subObject = SubClass()
 println(subObject.another) // inheritance in action
 
 subObject.display()
-
+subObject.fullName
+subObject.fName
 
 
 
