@@ -120,3 +120,17 @@ var components = someVal.componentsSeparatedByString(" ")  // used a function fr
 for i in components {
 println(i)
 }
+
+
+// NSURL Functions
+var URL =  NSURL(string: "http://www.google.com/Haroon&q=Baig")
+URL?.lastPathComponent
+URL?.absoluteURL
+URL?.host
+URL?.relativePath
+URL?.scheme
+
+
+
+
+
