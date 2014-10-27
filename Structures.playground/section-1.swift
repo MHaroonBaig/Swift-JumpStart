@@ -73,7 +73,12 @@ var site: String?
 var site2: String = "www.google.com"
 site = "www.GitHub.com"
 
+// Nil Coalesing operator. It doees the forced unwrapping.
 var site3 = site ?? site2
+println (site3)
+
+
+
 
 
 
