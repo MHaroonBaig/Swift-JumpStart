@@ -14,7 +14,7 @@ func changeVal (var someObj:MyClass) -> String {
     return someObj.value
 }
 
-// Change this from class to stuct and see the differnce bellow.
+// Change this from class to stuct and see the difference below.
 class MyClass {
     var value:String = "Hello"
 }
@@ -27,7 +27,6 @@ struct MyStuct {
     
     // Property Observer
     var observer:String = "This is an observer" {
-        
         willSet{
             println("Will change to \(newValue)")
         }
@@ -38,10 +37,10 @@ struct MyStuct {
     
     // Computed Property
     var fullName :String {
-        return (fName+" "+lName)
+        return (fName + " " + lName)
     }
     
-    lazy var lazyvar:String = somefunc()
+    lazy var lazyvar: String = somefunc()
     
 }
 
@@ -69,6 +68,12 @@ c = a-b
 c = a*b
 c = b/a
 c = a%b
+
+var site: String?
+var site2: String = "www.google.com"
+site = "www.GitHub.com"
+
+var site3 = site ?? site2
 
 
 
