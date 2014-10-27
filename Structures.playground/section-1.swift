@@ -67,8 +67,8 @@ var value2: Float = 5.8
 var result:Float = value * value2
 result
 
-var result2 = Float (a) * Float(b)
-result2
+var result2 = Float(a) * Float(b)
+result2  // Type of the operands must be same for these kida operations
 
 c = a+b
 c = a-b
@@ -85,9 +85,30 @@ var site3 = site ?? site2
 println (site3)
 
 
+var date1 = NSDateComponents()
+date1.year = 2015
+date1.month = 10
+date1.day = 90
 
 
+var date2 = NSDateComponents()
+date2.year = 2015
+date2.month = 10
+date2.day = 90
 
+
+if (date1 == date2){
+    println("The values are the same")
+}
+else {
+    println("The values are not the same")
+}
+
+var date3 = date1
+
+if (date1 === date3){
+    println("The objects instance are the same")
+}
 
 
 
