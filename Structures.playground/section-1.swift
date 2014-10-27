@@ -55,3 +55,31 @@ myObject.observer = "My name is Haroon" //Changed the value of an Observer
 var obj = MyClass()
 changeVal(obj)
 obj.value
+
+
+// Opertors
+
+var a:Int = 10
+var b: Int = 20
+var c:Int
+var c1:Float
+
+c = a+b
+c = a-b
+c = a*b
+c = b/a
+c = a%b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
