@@ -1,6 +1,7 @@
 // Playground - noun: a place where people can play
 
 import UIKit
+import Foundation
 
 // a Function for lazy type variable
 func somefunc() -> String{
@@ -110,7 +111,13 @@ if (date1 === date3){
     println("The objects instance are the same")
 }
 
+var someVal :String = "Hello my name is Haroon"
 
+var components = someVal.componentsSeparatedByString(" ")
+
+for i in components {
+println(i)
+}
 
 
 
