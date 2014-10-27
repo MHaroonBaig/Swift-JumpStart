@@ -10,12 +10,14 @@ func somefunc() -> String{
 
 
 //Classes are passed by reference But structures are passed by value
-func changeVal (var someObj:Any) -> Any {
-    if ( someObj is MyClass() ) || (someObj is MyStruct2 ){
-        someObj.value = "Changed"
-        
-        return someObj.value
-    }
+func changeVal (var someObj:MyClass) -> String {
+    someObj.value = "Changed"
+    return someObj.value
+}
+
+func changeVal2 (var someObj: MyStruct2) -> String{
+    someObj.value = "Changed2"
+    return someObj.value
 }
 
 // Change this from class to stuct and see the difference below.
@@ -60,14 +62,16 @@ myObject.lazyvar //Called a function
 
 myObject.observer = "My name is Haroon" //Changed the value of an Observer
 
+// The reference of the object is passed unlike structures
 var obj = MyClass()
 changeVal(obj)
 obj.value
 
-var obj2 = MyStruct2(value: "Hi There")
-changeVal(obj2)
-obj2.value
 
+// The copy of the object was been passed unlike classes
+var obj2 = MyStruct2()
+changeVal2(obj2)
+obj2.value
 
 
 // Opertors
