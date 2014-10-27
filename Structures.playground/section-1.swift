@@ -71,6 +71,8 @@ result
 var result2 = Float(a) * Float(b)
 result2  // Type of the operands must be same for these kida operations
 
+
+// The data types of operands must be the same here.
 c = a+b
 c = a-b
 c = a*b
@@ -113,18 +115,8 @@ if (date1 === date3){
 
 var someVal :String = "Hello my name is Haroon"
 
-var components = someVal.componentsSeparatedByString(" ")
+var components = someVal.componentsSeparatedByString(" ")  // used a function from the foundation class
 
 for i in components {
 println(i)
 }
-
-
-
-
-
-
-
-
-
-
