@@ -61,7 +61,14 @@ obj.value
 var a:Int = 10
 var b: Int = 20
 var c:Int
-var c1:Float
+var value:Float = 10.8
+var value2: Float = 5.8
+
+var result:Float = value * value2
+result
+
+var result2 = Float (a) * Float(b)
+result2
 
 c = a+b
 c = a-b
