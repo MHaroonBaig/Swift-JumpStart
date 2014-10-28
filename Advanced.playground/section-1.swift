@@ -93,6 +93,27 @@ myObject.someProperty
 
 
 
+// Extensions
+
+extension String {
+    // Here, we will add a method to the String data type for more productivity.
+    
+    func reverseWords () -> String {
+        var wordsArray = self.componentsSeparatedByString(" ")
+        wordsArray = wordsArray.reverse()
+        var combineString:String = " "
+        for i in wordsArray {
+            combineString += i + " "
+        }
+        return combineString
+    }
+    
+}
+
+var myString = "Hello I am Haroon"
+myString.reverseWords()
+
+
 
 
 
