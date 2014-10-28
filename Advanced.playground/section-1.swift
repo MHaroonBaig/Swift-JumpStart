@@ -33,19 +33,31 @@ for i in objects{
 
 // AnyObjects and Any
 
-var someValue:  AnyObject
+var someValue:  Any
 someValue = "Hello this is Any type object"
 someValue = 66
 
 /*
-Here we apply the type check to somValue. If it's a String, do some String operations. Or else, display the value.
-We can store anything in a variable if it's declared with the 'AnyObject' or 'Any' type
+Here we apply the type check to the variable 'somValue'. If it's a String, do some String operations. Or else, display the value.
+We can store anything in a variable if it's declared with the 'AnyObject' or 'Any' type.
 */
+
 if (someValue is String){
-    var wordsArray = someValue.componentsSeparatedByString(" ")
+    var someValue2 = someValue as String // If we were using AnyObject, we wouldnt do this. Example Given below
+    var wordsArray = someValue2.componentsSeparatedByString(" ")
 }
 else {
     println("Wasn't a String so displaying the value. The value is \(someValue)")
+}
+
+var anyValue: AnyObject
+anyValue = "This is another String but this time we're using AnyObject instead of Any"
+anyValue = 90
+if (anyValue is String){
+    var hipHop = anyValue.componentsSeparatedByString(" ")
+}
+else{
+    println(anyValue)
 }
 
 
