@@ -16,7 +16,7 @@ for i in objects{
     /* There are many ways to extract the type from as? and then force unwrapping it. But, using if let
     makes our task wasy as it automatically force unwrap all the things for us. We dont have to worry about 'nil' too. A magic indeed.
     */
-
+    
     if let item = i as? UIAlertView{
         println("This is an alert instance")
     }
@@ -30,5 +30,49 @@ for i in objects{
     }
     
 }
+
+// AnyObjects and Any
+
+var someValue:  AnyObject
+someValue = "Hello this is Any type object"
+someValue = 66
+
+/*
+Here we apply the type check to somValue. If it's a String, do some String operations. Or else, display the value.
+We can store anything in a variable if it's declared with the 'AnyObject' or 'Any' type
+*/
+if (someValue is String){
+    var wordsArray = someValue.componentsSeparatedByString(" ")
+}
+else {
+    println("Wasn't a String so displaying the value. The value is \(someValue)")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
