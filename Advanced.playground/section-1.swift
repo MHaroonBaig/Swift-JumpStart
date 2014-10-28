@@ -60,7 +60,36 @@ else{
     println(anyValue)
 }
 
+// Protocols
 
+protocol myProtocol {
+    
+    /* In protocols, we just have to write the function's name, parameters and the return type, which we want our class to implement */
+    
+    func display (name:String) -> String
+    
+    // We specify either the property should be read-only or read-write.
+    var someProperty: Int { get } // read-only Computed Property
+}
+
+class myClass: myProtocol {
+    
+    /* Do whatever we want here in this class but as we extended the protocol, we must fulfill the needs, i.e. impplement all the things specified in the protocol
+    */
+    
+    func display (name:String) -> String {
+        return ("hey \(name), We've implemented a protocol method, yayy!")
+    }
+    
+    var someProperty:Int {
+        return 90
+    }
+    
+}
+
+var myObject = myClass()
+myObject.display("Haroon")
+myObject.someProperty
 
 
 
