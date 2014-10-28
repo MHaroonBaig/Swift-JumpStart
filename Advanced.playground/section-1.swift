@@ -97,7 +97,6 @@ myObject.someProperty
 
 extension String {
     // Here, we will add a method to the String data type for more productivity.
-    
     func reverseWords () -> String {
         var wordsArray = self.componentsSeparatedByString(" ")
         wordsArray = wordsArray.reverse()
@@ -114,7 +113,37 @@ var myString = "Hello I am Haroon"
 myString.reverseWords()
 
 
+extension Int {
+    // Extending the Int thing.
+    
+    func display () {
+        println(self)
+    }
+    
+    func isEven () -> Bool {
+        if (self%2 == 0){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    func isOdd () -> Bool {
+        if (self%2 == 0){
+            return false
+        }
+        else{
+            return true
+        }
+    }
+}
 
+var someInt: Int
+someInt = 9
+someInt.display()
+someInt.isEven()
+someInt.isOdd()
 
 
 
