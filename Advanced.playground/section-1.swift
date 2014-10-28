@@ -176,7 +176,6 @@ func printArray <T> (array: [T]) -> Int{
     println()
     
     return count++
-    
 }
 
 var arrayInt = [1,2,3,4,5,6,7]
