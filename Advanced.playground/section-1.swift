@@ -145,6 +145,21 @@ someInt.display()
 someInt.isEven()
 someInt.isOdd()
 
+// Extending the Arrays
+
+extension Array {
+    func display () {
+        for i in self {
+            print(i)
+            print(" ")
+        }
+        println()
+    }
+}
+
+var intArray = [1,2,3,4,5,6]
+intArray.display()
+
 
 // Generics
 
