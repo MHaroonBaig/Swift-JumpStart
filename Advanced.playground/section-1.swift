@@ -146,17 +146,29 @@ someInt.isEven()
 someInt.isOdd()
 
 
+// Generics
 
+/* They automaticaly inferrs the type. We don't have to check manually through 'as?' or any downcasting etc. They are much more like Any or AnyObject but they are intelligent enough to inferr the type. */
 
+func printArray <T> (array: [T]) -> Int{
+    var count :Int = 0
+    
+    for i in array{
+        print(i)
+        print(" ")
+        count++
+    }
+    println()
+    
+    return count++
+    
+}
 
+var arrayInt = [1,2,3,4,5,6,7]
+var arrayString = ["ab", "cd", "ef", "gh"]
 
-
-
-
-
-
-
-
+printArray(arrayInt)
+printArray(arrayString)
 
 
 
