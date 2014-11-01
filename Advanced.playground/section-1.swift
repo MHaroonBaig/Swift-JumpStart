@@ -14,7 +14,7 @@ objects = [button, barButton, dialog]
 for i in objects{
     
     /* There are many ways to extract the type from as? and then force unwrapping it. But, using if let
-    makes our task wasy as it automatically force unwrap all the things for us. We dont have to worry about 'nil' too. A magic indeed.
+    makes our task easy as it automatically force unwraps all the things for us. We dont have to worry about 'nil' too. A magic indeed.
     */
     
     if let item = i as? UIAlertView{
@@ -68,7 +68,7 @@ protocol myProtocol {
     
     func display (name:String) -> String
     
-    // We specify either the property should be read-only or read-write.
+    // We specify either the property should be read-only or read-write computed property.
     var someProperty: Int { get } // read-only Computed Property
 }
 
