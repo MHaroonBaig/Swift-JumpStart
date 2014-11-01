@@ -140,6 +140,15 @@ let clo = {
     
 }
 
+func test (cc:()->()){
+    
+    for i in 0..<10{
+        cc()
+        
+    }
+    
+}
+
 test(clo)
 test( {
     ()->() in
@@ -149,14 +158,7 @@ test( {
 } )
 
 
-func test (cc:()->()){
-    
-    for i in 0..<10{
-        cc()
-        
-    }
-    
-}
+
 
 var unsorted = [3,5,6,4,6,6,4,34,3,3,25,6,8,9,0,9]
 
