@@ -1,6 +1,7 @@
-#Swift Jumpstart
 <img src = "http://rack.1.mshcdn.com/media/ZgkyMDE0LzA3LzEyLzJhL3N3aWZ0bG9nb2hlLjU3NzBhLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/99456315/0f8/swift-logo-hero.jpg" />
 <br>
+#Swift Jumpstart
+---
 These files contain the code snippets necessary for those who want to taste what Swift really is.
 ###Topics covered:
 * Basic Syntax
