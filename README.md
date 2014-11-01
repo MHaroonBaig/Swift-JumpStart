@@ -18,4 +18,4 @@ These files contain the code snippets necessary for those who want to taste what
 * Extensions
 
 ---
-Comments are added where necessary. The work is still in progress.
+Comments are added where necessary. The work is still in progress :blush:
