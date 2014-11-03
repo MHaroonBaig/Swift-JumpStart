@@ -147,8 +147,27 @@ default:
 ======================================= SEPARATION =========================================
 */
 
+var anIntArray: [Int]
+anIntArray = [1,2,3,4,5]
 
+// Iterating using the FOR-IN loop
+for i in anIntArray{
+    println("\(i) ")
+}
+println(anIntArray.count) // Length of an array
 
+anIntArray.append(6)      // Adding an element at the end
+println(anIntArray.count)
+
+anIntArray.removeLast() // Removing the last element
+println(anIntArray.count)
+
+println(anIntArray[4]) // Accessing individual elements of an array
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
 
 
 
