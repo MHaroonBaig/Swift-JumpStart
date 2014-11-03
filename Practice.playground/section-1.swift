@@ -117,6 +117,38 @@ else {
 ======================================= SEPARATION =========================================
 */
 
+// ---- Optionals ----
+
+var simpleDeclarationOptional:String? = "This is an optional."
+var anOptional:String?
+println(anOptional)
+
+anOptional = "Now we gave it a value, now it shouldn't be nil"
+println(anOptional!) // The '!' sign at the end is to force unwrap the optional
+
+// Using IF-LET, we don't necessarily need to force unwrap an optional to get it's value.
+if let someValue = anOptional {
+    println(someValue) // automatically forced unwrapped
+}
+else {
+    println("The optional didn't have any value, its nil")  // would be nil if it doesnt have any value
+}
+
+// Same rules apply here.
+switch (anOptional){
+case nil:
+    println("You see, I told you.")
+default:
+    println(anOptional!) // can have a value or can be nil. Just having two states.
+}
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
+
+
+
 
 
 
