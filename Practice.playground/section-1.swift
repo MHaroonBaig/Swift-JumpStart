@@ -2,11 +2,9 @@
 
 import UIKit
 
-
-// This files contains all the basic syntax including operators, initialisations and things like that
+// This file is just a quick review of what swift looks like and how it's been written.
 
 // -------- Variables -- self explainatory ----------
-// --------------------------------------------------
 
 // Explicit declaration
 var someString:String
@@ -27,15 +25,12 @@ println(someString)
 print("This line would be printed but without an endLine character at the end")
 println("This is the Integer \(someInt), and this is a float \(someFloat)")
 
-
 // --------- Constants -------------
-// ---------------------------------
 
 // They must be initialised at the sane time when they are declared
 let someConstant:String = "Hello, this is a constant and it's value cannot be changed"
 let constantInt:Int = 34
-print(constantInt)
-// Their value cannot be changed throughout the code.
+print(constantInt) // Their value cannot be changed throughout the code.
 
 /*
 ============================================================================================
@@ -117,7 +112,7 @@ else {
 ======================================= SEPARATION =========================================
 */
 
-// ---- Optionals ----
+// ------ Optionals ------
 
 var simpleDeclarationOptional:String? = "This is an optional."
 var anOptional:String?
@@ -147,7 +142,7 @@ default:
 ======================================= SEPARATION =========================================
 */
 
-//----- ARRAYS ----
+// -------- Arrays -------
 
 var anIntArray: [Int]
 anIntArray = [1,2,3,4,5]
@@ -172,7 +167,7 @@ println(anIntArray[4]) // Accessing individual elements of an array
 */
 
 
-// ---- DICTIONARIES----
+// ------ Dictionaries ------
 
 var myDict:[Int:String] // All the keys mustbe of the same type, so as values
 myDict = [1:"One", 2:"Two", 3:"Three", 4:"Four", 5:"Five"]
@@ -192,7 +187,7 @@ println(myDict[3]!)  // The individual accessing of an elements return an option
 ======================================= SEPARATION =========================================
 */
 
-// ---- Tuples ----
+// -------- Tuples --------
 
 // ** Unnamed Tuples
 var myTuple : (Int, String) // Declaring a Tuple
