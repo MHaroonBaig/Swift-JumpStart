@@ -37,6 +37,47 @@ let constantInt:Int = 34
 print(constantInt)
 // Their value cannot be changed throughout the code.
 
+// ============================================================================================
+// ======================================= SEPARATION =========================================
+// ============================================================================================
+
+
+// --------- Program Flow ----------
+// Here, curly braces are necessary, even if there si a single statement under IF. Same is the case with else.
+
+if someInt == 12 {
+    println("This is an if staatement")
+}
+else if (someInt == 13) {
+    println("This is an else-if clause")
+}
+else {
+    println("This is an else clause")
+}
+
+// -------- Switch Statement ---------
+
+/*
+In swift, you donot have to write the 'break' after every statement. if a case matches, then the program flow
+comes out of the switch statement. But, we have to provide a default case in every situation.
+*/
+
+switch (constantInt){
+case 12:
+    println("This is how we use cases here")
+case  34:
+    println("This should be printed")
+default:
+    break
+}
+
+// ============================================================================================
+// ======================================= SEPARATION =========================================
+// ============================================================================================
+
+
+
+
 
 
 
