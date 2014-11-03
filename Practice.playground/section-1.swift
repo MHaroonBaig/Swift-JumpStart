@@ -273,6 +273,65 @@ returnOptional(3)
 ======================================= SEPARATION =========================================
 */
 
+// -------- CLosures --------
+
+let myClosure = {
+    () -> () in
+    println("This is the simplest closure you'll ever see")
+}
+
+// a Function taking a closure as an argument
+func takeClosure (closure:() -> ()) {
+    closure()
+}
+
+// a function making a decision with the help of a closure
+func closureOperation (param1:Int, param2:Int, closure:(a:Int, b:Int) -> Bool) -> Bool {
+    var someValue = closure(a: param1, b: param2)
+    if (someValue){
+        println("Yes, this number is divisible by 2")
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+// Passing a closure to a function
+takeClosure(myClosure)
+
+// Passing a closure explicitly
+takeClosure({
+    () -> () in
+    println("This is another way of passing the closure to a function, direclty.")
+})
+
+// We are telling here how the behaviour of the function should be.
+closureOperation(9, 100, {
+    (a:Int, b:Int) -> Bool in
+    if (a%2 == 0 && b%2 == 0){
+        return true
+    }
+    else {
+        return false
+    }
+})
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
