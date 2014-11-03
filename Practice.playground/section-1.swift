@@ -245,6 +245,11 @@ func returnNamedTuple() -> (value1:Int, value2:String) {
     return (27, "Named Tuple")
 }
 
+// Returning an optional
+func returnOptional (param1:Int) -> Int? {
+    return param1
+}
+
 // calling a minimalistic function
 simpleFunction()
 
@@ -259,6 +264,9 @@ returnNamedTuple()
 
 // Incase of functions having some default arguments, we have to pass "Named Parameters"
 myDefaultFunction(23, param2: "Hello there")
+
+// Optional Thing
+returnOptional(3)
 
 /*
 ============================================================================================
