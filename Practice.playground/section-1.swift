@@ -147,6 +147,8 @@ default:
 ======================================= SEPARATION =========================================
 */
 
+//----- ARRAYS ----
+
 var anIntArray: [Int]
 anIntArray = [1,2,3,4,5]
 
@@ -168,6 +170,36 @@ println(anIntArray[4]) // Accessing individual elements of an array
 ============================================================================================
 ======================================= SEPARATION =========================================
 */
+
+
+// ---- DICTIONARIES----
+
+var myDict:[Int:String] // All the keys mustbe of the same type, so as values
+myDict = [1:"One", 2:"Two", 3:"Three", 4:"Four", 5:"Five"]
+
+myDict.updateValue("Six", forKey: 6) // Updates the value for a key and if it's not there, its then added to the dict
+
+// Iterating over a dictionary
+for (key, value) in myDict{
+    println("Key: \(key) and Value: \(value)")
+}
+
+myDict.removeValueForKey(6) // Removing a value for a particular key
+
+println(myDict[3]!)  // The individual accessing of an elements return an optional, so it should be forced unwrapped
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
+
+
+
+
+
+
+
+
+
 
 
 
