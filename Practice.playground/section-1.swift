@@ -208,11 +208,62 @@ println("\(myNamedTuple.oneValue) and \(myNamedTuple.secondValue)")
 ======================================= SEPARATION =========================================
 */
 
+// ----- Functions ------
 
+// Format. Start with the keyword 'func'
+func simpleFunction(){
+    println("This is the simple function which takes nothing and return nothing")
+}
 
+// This would be the same for Int, FLoat, Double, Bool
+func myFunction (param1:Int, param2:String) -> String {
+    return (" First param: \(param1) and Second param: \(param2) ")
+}
 
+// Functions with default arguments
+func myDefaultFunction (param1:Int, param2:String = "Default") -> String{
+    return (" First param: \(param1) and Second param: \(param2) ")
+}
 
+// Returning an Array
+func returnArray () -> [Int] {
+    return [1,2,3,4,5]
+}
 
+//Returning a Dictionary
+func returnDict () -> [Int: String]{
+    return [1:"One", 2:"Two", 3:"Three"]
+}
+
+// Returning an unnamed Tuple
+func returnTuple() -> (Int, String) {
+    return (1, "One")
+}
+
+// Returning a named Tuple
+func returnNamedTuple() -> (value1:Int, value2:String) {
+    return (27, "Named Tuple")
+}
+
+// calling a minimalistic function
+simpleFunction()
+
+var collectingReturnValue = myFunction(23, "Hi")
+println(collectingReturnValue)
+
+// Collect the values in the specified return type
+returnArray()
+returnDict()
+returnTuple()
+returnNamedTuple()
+
+// Incase of functions having some default arguments, we have to pass "Named Parameters"
+myDefaultFunction(23, param2: "Hello there")
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
 
 
 
