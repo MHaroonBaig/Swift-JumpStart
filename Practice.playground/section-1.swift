@@ -192,7 +192,26 @@ println(myDict[3]!)  // The individual accessing of an elements return an option
 ======================================= SEPARATION =========================================
 */
 
+// ---- Tuples ----
 
+// ** Unnamed Tuples
+var myTuple : (Int, String) // Declaring a Tuple
+myTuple = (1, "Hello")  // Initializing a Tuple
+
+// Accessing the individual values of a tuple.
+println(myTuple.0)
+println(myTuple.1)
+
+// ** Named Tuples
+var myNamedTuple: (oneValue:Int, secondValue:String)
+myNamedTuple.oneValue = 10
+myNamedTuple.secondValue = "Hi There"
+println("\(myNamedTuple.oneValue) and \(myNamedTuple.secondValue)")
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
 
 
 
