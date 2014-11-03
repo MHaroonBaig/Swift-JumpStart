@@ -84,6 +84,7 @@ enum Months {
     case Mar
 }
 
+var simpleDeclatation = Months.Feb
 var myEnumDeclaration:Months
 myEnumDeclaration = .Jan    // Assignment using the Dot syntax
 println(myEnumDeclaration)
@@ -98,6 +99,17 @@ case .Mar:
     println("Enum matched")
 default:
     break
+}
+
+// -- IF statement with enumerations
+if myEnumDeclaration == .Mar {
+    println("I'm lonely")
+}
+else if myEnumDeclaration == .Jan {
+    println("Swift is wonderful")
+}
+else {
+    println("Get a life")
 }
 
 /*
