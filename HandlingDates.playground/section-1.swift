@@ -60,9 +60,11 @@ The following masks can be used with a bitwise OR operator:
 .CalendarUnitCalendar
 .CalendarUnitTimeZone
 */
-let components = calendar.components(.MonthCalendarUnit | .DayCalendarUnit, fromDate: currentDate)
+let components = calendar.components(.MonthCalendarUnit | .DayCalendarUnit | .CalendarUnitMinute | .CalendarUnitHour, fromDate: currentDate)
 components.day
 components.month
+components.minute
+components.hour
 
 // ---------------------- Break ------------------------------
 
