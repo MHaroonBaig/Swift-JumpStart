@@ -41,6 +41,13 @@ dateComponents2.minute = 30
 
 var calculatedDate = calendar.dateByAddingComponents(dateComponents2, toDate: currentDate, options: nil)
 
+// Conversion to String format
+var didCalculated = NSDateFormatter.localizedStringFromDate(calculatedDate!, dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.NoStyle)
+
+println("After 5 hours and 30 minutes, the date would be \(didCalculated)")
+/* If we explicitly print out the calculatedDate, it'd print out some junk components too which we dont need. Thats why we converted that to String, took out unnecessary parts and printed that string.
+*/
+
 // ---------------------- Break ------------------------------
 
 /* Extracting some specific parts from the date, like, a month or a day.
