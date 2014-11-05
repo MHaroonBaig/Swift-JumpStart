@@ -334,7 +334,7 @@ class myClass {
     var firstName: String
     var lastName: String
     
-    // a property observer
+    // property observer
     var someThing:Int = 90{
         willSet{
             println("Will set to \(newValue)")
@@ -366,7 +366,7 @@ class myClass {
         return ("First Name: \(firstName) and Last Name: \(lastName)")
     }
     
-    // class level function
+    // Type level function
     class func classLevel (param1: String, param2: String) -> String {
         return (param1 + " " + param2)
     }
@@ -407,6 +407,62 @@ secondObjet.display() // overrided function
 ======================================= SEPARATION =========================================
 */
 
+// -------- Structures --------
+
+// Everything in a class and a structure is the same. The only difference is that they cannot be inherited.
+
+struct myStruct {
+    
+    var firstName: String
+    var lastName: String
+    
+    // property observer
+    var someThing:Int = 90{
+        willSet{
+            println("Will set to \(newValue)")
+        }
+        didSet{
+            println("Did set from \(oldValue)")
+        }
+    }
+    
+    // lazy var. Not initialised when the object is instantiated
+    lazy var someValue = forLazyVar()
+    
+    // read-only computed property
+    var fullName: String {
+        return (firstName + " " + lastName)
+    }
+    
+    init (){
+        self.firstName = "First"
+        self.lastName = "Last"
+    }
+    
+    init (a: String, b: String){
+        self.firstName = a
+        self.lastName = b
+    }
+    
+    func display () -> String {
+        return ("First Name: \(firstName) and Last Name: \(lastName)")
+    }
+    
+    // typle level instance
+    static func TypeLevel (param1: String, param2: String) -> String {
+        return (param1 + " " + param2)
+    }
+    
+}
+
+var myStructObject = myStruct(a: "Haroon", b: "baig")
+myStructObject.display()
+myStruct.TypeLevel("Hello", param2: "Swift") //Type level function
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
 
 
 
