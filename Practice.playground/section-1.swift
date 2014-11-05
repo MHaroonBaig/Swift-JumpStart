@@ -322,6 +322,90 @@ closureOperation(9, 100, {
 ======================================= SEPARATION =========================================
 */
 
+// -------- Classes --------
+
+// The returned value would be used by lazy var property in the class
+func forLazyVar () -> String {
+    return ("This is for lazy var")
+}
+
+class myClass {
+    
+    var firstName: String
+    var lastName: String
+    
+    // a property observer
+    var someThing:Int = 90{
+        willSet{
+            println("Will set to \(newValue)")
+        }
+        didSet{
+            println("Did set from \(oldValue)")
+        }
+    }
+    
+    // lazy var. Not initialised when the object is instantiated
+    lazy var someValue = forLazyVar()
+    
+    // read-only computed property
+    var fullName: String {
+        return (firstName + " " + lastName)
+    }
+    
+    init (){
+        self.firstName = "First"
+        self.lastName = "Last"
+    }
+    
+    init (a: String, b: String){
+        self.firstName = a
+        self.lastName = b
+    }
+    
+    func display () -> String {
+        return ("First Name: \(firstName) and Last Name: \(lastName)")
+    }
+    
+    // class level function
+    class func classLevel (param1: String, param2: String) -> String {
+        return (param1 + " " + param2)
+    }
+    
+}
+
+// Inheritance
+class subClass: myClass{
+    
+    var middleName: String
+    
+    override init() {
+        middleName = " "
+        super.init() // You must call out this while overriding the init
+    }
+    
+    // overriding a basic function
+    override func display() -> String {
+        return ("This method is from the subclass")
+    }
+}
+
+var myClassObject = myClass(a: "Haroon", b: "Baig")
+var collectedValue = myClassObject.display()
+
+println(collectedValue)
+println(myClassObject.someValue) // lazy var instantiated
+println(myClassObject.fullName) // read-only computed property
+
+myClass.classLevel("Hello", param2: "Swift") //class level function
+myClassObject.someThing = 100 // Property observer
+
+var secondObjet = subClass()
+secondObjet.display() // overrided function
+
+/*
+============================================================================================
+======================================= SEPARATION =========================================
+*/
 
 
 
