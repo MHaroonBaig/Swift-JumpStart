@@ -116,9 +116,21 @@ extension String {
         return combineString
     }
     
+    // A function which returns the length of a String.
+    func len() -> Int {
+        var count: Int = 0
+        for i in self{
+            count++
+        }
+        return count
+    }
+    
+    
 }
 
 var myString = "Hello I am Haroon"
+myString.len()
+
 myString.reverseWords()
 
 
