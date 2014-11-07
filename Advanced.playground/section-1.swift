@@ -62,11 +62,19 @@ else{
 
 // Protocols
 
-protocol myProtocol {
+/*
+marking this protocol with @objc makes sure that this protocol contains optional functions which a class ight not require.
+This protocol with the attribute @objc is only applicable to classes. To use it with structures, remove that attribute.
+*/
+
+@objc protocol myProtocol {
     
     /* In protocols, we just have to write the function's name, parameters and the return type, which we want our class to implement */
     
     func display (name:String) -> String
+    
+    // A class which conforms to this protocol might not want to implement that function.
+    optional func optionalFunc (name:String) -> Int
     
     // We specify either the property should be read-only or read-write computed property.
     var someProperty: Int { get } // read-only Computed Property
