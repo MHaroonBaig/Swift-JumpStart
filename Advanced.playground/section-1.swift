@@ -82,7 +82,8 @@ This protocol with the attribute @objc is only applicable to classes. To use it 
 
 class myClass: myProtocol {
     
-    /* Do whatever we want here in this class but as we extended the protocol, we must fulfill the needs, i.e. impplement all the things specified in the protocol
+    /* Do whatever we want here in this class but as we extended the protocol, we must fulfill the needs, i.e. impplement all the things specified in the protocol.
+    We aren't bound to implement functions which are marked as optionals.
     */
     
     func display (name:String) -> String {
