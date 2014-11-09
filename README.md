@@ -23,6 +23,7 @@ These files contain the code snippets necessary for those who want to taste what
 * Type Checking
 * The glory of Nil Coalescing Operator
 * Protocols
+* Optional Functions and @objc attribute
 * Generics
 * Extensions
 
